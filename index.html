@@ -2,17 +2,64 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="row">
+  <!-- ─────────── Left column : Updates ─────────── -->
+  <div class="column leftcol" style="overflow-y:scroll;height:1225px">
+    <h3 style="text-align:center">Latest Updates</h3>
+    <hr width="25%" color="#FF8A33" size="5">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <ul>
+      <li class="updates">[<b>May 2025</b>] Invited to serve on the Program Committee for <a
+          href="https://www.iccd-conf.com/Program_Committee.html" target="_blank">IEEE ICCD 2025</a>.</li>
+      <li class="updates">[<b>May 2025</b>] Featured on Workday Life Blog – <i><a
+            href="https://workdaylifeblog.medium.com/my-invisible-battle-thriving-with-ulcerative-colitis-at-workday-aba5b0fc32e6"
+            target="_blank">My Invisible Battle: Thriving with Ulcerative Colitis at Workday</a></i>.</li>
+      <li class="updates">[<b>Mar 2023</b>] Joined Workday’s Cloud &amp; AI Platform group to build next-gen
+        observability and AI-driven data platforms.</li>
+      <li class="updates">[<b>Aug 2020</b>] Joined Microsoft Azure (Cloud &amp; AI Platforms) to develop container
+        orchestration and lifecycle-management services.</li>
+      <li class="updates">[<b>Jun 2020</b>] Research on reproducibility of NPM packages accepted at <i>IEEE ICSME
+          2020</i>.</li>
+    </ul>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <h3 style="text-align:center">Previously</h3>
+    <hr width="20%" color="#FF8A33" size="5">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    <ul>
+      <li class="updates">[<b>May 2020</b>] Defended dissertation <i>Investigating the Reproducibility of NPM
+          Packages</i> (<a
+          href="https://vtechworks.lib.vt.edu/server/api/core/bitstreams/3ef5408d-8617-4993-ac7e-d171a13dfa22/content"
+          target="_blank">PDF</a>).</li>
+      <li class="updates">[<b>Aug 2019</b>] Began research in Software Engineering Lab @ Virginia Tech under
+        Prof.&nbsp;Na Meng.</li>
+      <li class="updates">[<b>Jul 2019</b>] Research featured by the <a
+          href="https://theory.stanford.edu/main/index.shtml" target="_blank">Stanford Theory Group</a>.</li>
+      <li class="updates">[<b>Jun 2019</b>] Paper <i><a href="https://ieeexplore.ieee.org/abstract/document/8894252"
+            target="_blank">Scalable
+            Translation Validation of Unverified Legacy OS</a></i> code accepted at <a
+          href="https://fmcad.forsyte.at/FMCAD19/" target="_blank">ACM FMCAD 2019</a>.</li>
+      <li class="updates">[<b>May 2019</b>] Software-engineering intern, Core Payments Platform, PayPal.</li>
+      <li class="updates">[<b>Dec 2018</b>] Joined Systems Software Research Group @ Virginia Tech (advisor –
+        Prof.&nbsp;Binoy Ravindran).</li>
+      <li class="updates">[<b>Aug 2018</b>] Started graduate studies (M.S. Computer Engineering) at Virginia Tech.
+      </li>
+    </ul>
+  </div>
+
+  <!-- ─────────── Right column : Widgets ─────────── -->
+  <div class="column rightcol">
+    <!-- LinkedIn profile badge -->
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+      data-type="HORIZONTAL" data-vanity="pronnoygoswami" data-version="v1"></div>
+
+    <!-- Optional: Twitter timeline. Remove or uncomment if you want it -->
+
+    <a class="twitter-timeline" data-width="330" data-height="900" href="https://twitter.com/pronnoygoswami">
+      Tweets by pronnoygoswami
+    </a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </div>
 </div>
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
