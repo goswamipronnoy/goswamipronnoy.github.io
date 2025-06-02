@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" type="image/png" href="/images/pg_headshot.jpg" sizes="64x64" />
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+<head>
+  <link rel="icon" type="image/png" href="/images/pg_headshot.jpg" sizes="105x105" />
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <!--[if lt IE 9]>
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+    href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    {% seo %}
-  </head>
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  {% seo %}
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<body>
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <center><h3 class="site-name" style="margin-bottom:1px"><a href="{{ site.baseurl }}/"><b>{{ site.name }}</b></a></h3></center>
-            <center><h4 class="site-description" style="margin-bottom:3px">Engineering @ Workday • Distributed Systems, Cloud &amp; AI Infrastructure Lead &amp; Researcher</h4></center>
-            <center><h4 class="site-description">Author • Speaker • Startup Advisor • Ex‑Microsoft Azure, PayPal, McKinsey</h4></center>
-<!--             <center>
+        <div class="site-info">
+          <center>
+            <h3 class="site-name" style="margin-bottom:1px"><a href="{{ site.baseurl }}/"><b>{{ site.name }}</b></a>
+            </h3>
+          </center>
+          <center>
+            <h4 class="site-description" style="margin-bottom:3px">Engineering&nbsp;@&nbsp;Workday</h4>
+          </center>
+          <center>
+            <h4 class="site-description" style="margin-bottom:3px">Distributed&nbsp;Systems,
+              Cloud &amp; AI&nbsp;Infrastructure Lead </h4>
+          </center>
+          <center>
+            <h4 class="site-description">Author • Speaker • Startup&nbsp;Advisor • Ex‑Microsoft&nbsp;Azure,
+              PayPal, McKinsey</h4>
+          </center>
+          <!--             <center>
                 <h2 style="margin-top:8px">
                     <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js" user-profile="https://topmate.io/embed/profile/rishabhmisra?theme=d20844" btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1" button-text="Hop on a call? or DM 🤙🏻" position="relative" custom-padding="4px" custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer=""></script>
             </center> -->
-          </div>
-          
-          <!-- Navigation -->
-          <nav>
-            <center>
-              <div style="margin-top:-20px">
-                {% include svg-icons.html %}
-              </div>
-            </center>
-            <br/>
-            <div style="margin-top:-5px">
-              <a href="{{ site.baseurl }}/"><b>Home</b></a>
-              <a href="{{ site.baseurl }}/blog"><b>Blog</b></a>
-              <a href="{{ site.baseurl }}/experience"><b>Experience</b></a>
-              <a href="{{ site.baseurl }}/projects"><b>Projects</b></a>
-              <a href="{{ site.baseurl }}/research"><b>Research</b></a>
-              <a href="{{ site.baseurl }}/features"><b>Features</b></a>
-              <a href="{{ site.baseurl }}/updates"><b>Updates</b></a>
-              <a href="{{ site.baseurl }}/about"><b>About&nbsp;Me</b></a>
+        </div>
+
+        <!-- Navigation -->
+
+        <nav>
+          <center>
+            <div style="margin-top:-20px">
+              {% include svg-icons.html %}
             </div>
-          </nav>
-        </header>
-      </div>
+          </center>
+          <br />
+          <div style="margin-top:-5px">
+            <a href="{{ site.baseurl }}/"><b>Home</b></a>
+            <a href="{{ site.baseurl }}/blog"><b>Blog</b></a>
+            <a href="{{ site.baseurl }}/experience"><b>Experience</b></a>
+            <a href="{{ site.baseurl }}/projects"><b>Projects</b></a>
+            <a href="{{ site.baseurl }}/research"><b>Research</b></a>
+            <a href="{{ site.baseurl }}/features"><b>Features</b></a>
+            <a href="{{ site.baseurl }}/updates"><b>Updates</b></a>
+            <a href="{{ site.baseurl }}/about"><b>About&nbsp;Me</b></a>
+          </div>
+        </nav>
+      </header>
     </div>
+  </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+  <div id="main" role="main" class="container">
+    {{ content }}
+  </div>
 
-<!--     <div class="wrapper-footer"> -->
-<!--       <div class="container"> -->
-<!--         <footer class="footer"> -->
-<!--           {% include svg-icons.html %} -->
-<!--         </footer> -->
-<!--       </div> -->
-<!--     </div> -->
+  <!--     <div class="wrapper-footer"> -->
+  <!--       <div class="container"> -->
+  <!--         <footer class="footer"> -->
+  <!--           {% include svg-icons.html %} -->
+  <!--         </footer> -->
+  <!--       </div> -->
+  <!--     </div> -->
 
-    {% include analytics.html %}
-  </body>
+  {% include analytics.html %}
+</body>
+
 </html>
